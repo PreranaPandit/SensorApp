@@ -11,6 +11,7 @@ public class DashboardActivity extends AppCompatActivity {
 
     private Button btnShowAll;
     private Button btnAccelrate;
+    private  Button btnGyro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class DashboardActivity extends AppCompatActivity {
 
        btnShowAll = findViewById(R.id.btnDisplay);
        btnAccelrate = findViewById(R.id.btnAcceleration);
+       btnGyro = findViewById(R.id.btnGyroscope);
 
        btnShowAll.setOnClickListener(new View.OnClickListener() {
            @Override
@@ -32,6 +34,14 @@ public class DashboardActivity extends AppCompatActivity {
            @Override
            public void onClick(View v) {
                Intent intent = new Intent(DashboardActivity.this, AccelerometerSensor.class);
+               startActivity(intent);
+           }
+       });
+
+       btnGyro.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent = new Intent(DashboardActivity.this, GyroscopeActivity.class);
                startActivity(intent);
            }
        });

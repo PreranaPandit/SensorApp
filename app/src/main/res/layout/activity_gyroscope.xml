@@ -5,28 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AccelerometerSensor">
+    tools:context=".GyroscopeActivity">
 
-    <Button
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnDisplay"
-        android:text="DISPLAY"
+        android:id="@+id/etAdd"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
         />
 
-    <Button
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnAcceleration"
-        android:text="Acceleration"
+        android:id="@+id/etSubtract"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
         />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnGyroscope"
-        android:text="Gyroscope"
-        />
 
 
 </LinearLayout>
