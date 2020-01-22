@@ -5,24 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".GyroscopeActivity">
+    tools:context=".ProximitySensorActivity">
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etAdd"
-        android:gravity="center"
-        android:layout_marginTop="50dp"
+        android:id="@+id/tvProx"
+        android:layout_margin="30dp"
         />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etSubtract"
-        android:gravity="center"
-        android:layout_marginTop="80dp"
-        />
-
-
 
 </LinearLayout>
